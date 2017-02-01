@@ -1,0 +1,30 @@
+INPUT AND OUTPUT COMPARISONS:
+Test: (printf, 10000000 ints) 2.50c
+Test: (cout,   10000000 ints) 3.02c
+Test: (write,  10000000 ints, 104827485 chars) 2.88c + 0.25c
+Test: (scanf,  10000000 ints) 2.61c
+Test: (fwrite, 10000000 ints, 104827485 chars) 2.88c + 0.26c
+Test: (cin,    10000000 ints) 8.32c
+Test: (printf, 100000000 chars) 1.87c
+Test: (scanf,  100000000 chars) 8.44c
+Test: (cout,   100000000 chars) 6.98c
+Test: (cin,    100000000 chars) 12.51c
+Test: (putchar,100000000 chars) 2.26c
+Test: (getchar,100000000 chars) 1.99c
+Test: (read,   100000000 chars) 0.08c + 0.57c
+Test: (fread,  100000000 chars) 0.08c + 0.59c
+
+http://codeforces.com/blog/entry/6251 - a blog on I/O for c++
+
+math.pow does not work for int as it uses logarithms
+
+amazing proof for prime number evaluation - http://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-prime-number-to-determine-if-it-is-pr
+
+Use vector only when it needs to be resized, otherwise array is a good alternative.
+
+http://stackoverflow.com/questions/471432/in-which-scenario-do-i-use-a-particular-stl-container
+
+(a+b)%x = (a%x+b%x)%x
+
+http://stackoverflow.com/questions/16132176/problems-with-stdstoi-not-working-on-mingw-gcc-4-7-2
+
