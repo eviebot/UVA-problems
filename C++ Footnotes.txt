@@ -29,3 +29,5 @@ http://stackoverflow.com/questions/471432/in-which-scenario-do-i-use-a-particula
 http://stackoverflow.com/questions/16132176/problems-with-stdstoi-not-working-on-mingw-gcc-4-7-2
 
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
+
+http://bigocheatsheet.com/
