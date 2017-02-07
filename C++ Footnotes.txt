@@ -31,3 +31,5 @@ http://stackoverflow.com/questions/16132176/problems-with-stdstoi-not-working-on
 https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/
 
 http://bigocheatsheet.com/
+
+https://codebuddy.co.in/
