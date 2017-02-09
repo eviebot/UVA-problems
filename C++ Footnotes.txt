@@ -18,7 +18,7 @@ http://codeforces.com/blog/entry/6251 - a blog on I/O for c++
 
 math.pow does not work for int as it uses logarithms
 
-amazing proof for prime number evaluation - http://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-prime-number-to-determine-if-it-is-pr
+prime number - http://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-prime-number-to-determine-if-it-is-pr
 
 Use vector only when it needs to be resized, otherwise array is a good alternative.
 
@@ -33,3 +33,7 @@ https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-
 http://bigocheatsheet.com/
 
 https://codebuddy.co.in/
+
+http://stackoverflow.com/questions/1349734/why-on-earth-would-anyone-use-set-instead-of-unordered-set
+
+http://codeforces.com/blog/entry/23054
