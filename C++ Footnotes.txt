@@ -37,3 +37,5 @@ https://codebuddy.co.in/
 http://stackoverflow.com/questions/1349734/why-on-earth-would-anyone-use-set-instead-of-unordered-set
 
 http://codeforces.com/blog/entry/23054
+
+http://www.cs.northwestern.edu/~riesbeck/programming/c++/stl-iterator-define.html
