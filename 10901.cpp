@@ -30,7 +30,7 @@ int main()
     bool ferry_pos;
 
     cin >> lel;
-    for(int willie = 0; willie < lel; willie ++)
+    for(int willie = 1; willie <= lel; willie ++)
     {
         cin >> n >> t >> m;
         queue <int> q[2];
@@ -61,25 +61,48 @@ int main()
             global_time = q[1].front()+t;
             ferry_pos = true;
         }
-        //cout << q[0].empty()<<" "<< q[1].empty()<<"\n";
         while(checker(q[0], q[1]))
         {
             ferry = 0;
-
             while(!q[ferry_pos].empty() && q[ferry_pos].front() <= global_time && ferry != n)
             {
                 ferry++;
-                //cout << "TIME="<<q[ferry_pos].front()<<"\n";
                 mymap.insert( MP (index[ferry_pos].front(), global_time+t) );
                 index[ferry_pos].pop();
                 q[ferry_pos].pop();
             }
-
+            /*cout << q[0].size()<<" "<< q[1].size()<<" "<< ferry_pos<<"\n";
+            getchar();
+            cout << q[!ferry_pos].front()<<" "<< global_time<<"\n";
+            getchar();*/
             if(ferry!=0)
             {
                 global_time += t;
                 ferry_pos = !ferry_pos;
-                //getchar();
+            }
+            else if(q[0].empty())
+            {
+                if(ferry_pos)
+                {
+                    global_time = q[1].front();
+                }
+                else
+                {
+                    global_time  = max(q[1].front()+t, global_time+t);
+                }
+                ferry_pos = true;
+            }
+            else if(q[1].empty())
+            {
+                if(!ferry_pos)
+                {
+                    global_time = q[0].front();
+                }
+                else
+                {
+                    global_time  = max(q[0].front()+t, global_time+t);
+                }
+                ferry_pos = false;
             }
             else
             {
@@ -111,6 +134,7 @@ int main()
             cout << beg->se <<'\n';
             beg++;
         }
-        cout <<"\n";
+        if(willie != lel)
+            cout <<"\n";
     }
 }
