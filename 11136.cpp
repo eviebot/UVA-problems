@@ -17,15 +17,15 @@ int main()
 
     ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 
-    int n, i, k, j, t, sum;
+    long long int n, i, k, j, t, sum;
 
     while(true)
     {
         cin >> n;
         if(n==0)
             break;
-        multiset <int> myset;
-        multiset <int>::iterator BEG, END;
+        multiset <long long int> myset;
+        multiset <long long int>::iterator BEG, END;
         sum = 0;
         for(i = 0; i< n; i++)
         {
