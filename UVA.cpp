@@ -18,7 +18,8 @@ ifstream infile;
 
 int main()
 {
-    infile.open("input.txt");
-    outfile.open("output.txt");
+	infile.open("input.txt");
+	outfile.open("output.txt");
+
 
 }
