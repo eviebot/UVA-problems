@@ -237,9 +237,10 @@ int main()
 	infile.open("input.txt");
 	outfile.open("output.txt");
 
+	fastIO;
 	int Test, q, q_no, i, M, counter, j, k, T, ans, qt;
 	char dec;
-	bool temp[51];
+	bool temp[2000];
 	string s;
 	cin >> Test;
 
@@ -256,11 +257,12 @@ int main()
 
 		for(i = 0; i < M ; ++i)
 		{
-			cin >> T >> s;
+			cin >> T ;
+			cin >> s;
 
 			for(j = 0; j < s.size(); ++j)
 			{
-				temp[j] = s[j]-'0';
+				temp[j] = (int)(s[j]-'0');
 			}
 
 			for(j = 0; j < T; ++j)
@@ -271,7 +273,7 @@ int main()
 				}
 			}
 		}
-		for(i= 0; i <= 2*counter; ++i)
+		for(i= 0; i <= 2048000; ++i)
 		{
 			lazy[i] = -1;
 		}
