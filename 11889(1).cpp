@@ -22,34 +22,19 @@ int main()
 {
 	infile.open("input.txt");
 	outfile.open("output.txt");
-	lli n, i, last, t;
 
-	fastIO;
-	while(cin >> n){
-		if(!n)
-			break;
-		n = abs(n);
-		t = n;
-		int c = 0;
-		for(i = 2; i <= sqrt(n); ++i){
-			if(!(n%i)){
-				c++;
-			while(!(n%i)){
-				n/=i;
-				last = i;
-			}}
+	int test, n, i, a, c;
+	cin >> test;
+	for(int z =0 ; z < test; ++z){
+		int b;
+		cin >> a >> c;
+
+		if(c%a){
+			cout << "NO SOLUTION\n";
+			continue;
 		}
-		if(n == t){
-			cout << "-1\n";
-		}else{
-			if(n != 1){
-				c++;
-				last = n;
-			}
-			if(c < 2){
-				cout << "-1\n";
-			}else{
-			cout << last << "\n";}
-		}
+
+		int t = __gcd(c, c/a);
+		cout << c * t / a << "\n";
 	}
 }
